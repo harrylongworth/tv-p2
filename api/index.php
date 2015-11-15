@@ -96,7 +96,7 @@ $app->get('/hello/:name', function ($name) {
 
 $app->get('/fslist/:foldername', function ($foldername) {
 
-    $targetpath = "../$foldername";
+    $targetpath = "../../$foldername";
 
     $testexists = file_exists($targetpath);
 
